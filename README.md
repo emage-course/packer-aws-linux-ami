@@ -16,8 +16,6 @@ The Packer configuration file consists of three main components:
 2. **Builders:** Generates machine images.
 3. **Provisioners:** Install and configure software on the instance before the image is created. Provisioners are optional and include types such as Shell, Ansible, etc.
 
-### Let's get started with packer:
-
 ```sh
 ### validate and build the image
 packer validate amazon-linux-ami.json
