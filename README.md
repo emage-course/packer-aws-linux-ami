@@ -2,8 +2,10 @@
 
 Packer is similar to Terraform in that executed commands search the current working directory for configuration files and it uses the command plus subcommand format to run. Here are some of the basic commands to get going:
 
-`packer init` - intitializes packer plugins. This is similar to how Terraform intializes the configured providers
+`packer init` - intitializes packer plugins. This is similar to how Terraform intializes the configured providers.
+
 `packer validate` - validates packer configuration files. This is similar to Terraform’s validate subcommand and checks for syntax/configuration issues.
+
 `packer build` - kicks off the packer build process. The build command is like running Terraform apply with the -auto-approve flag to bypass the user provided input.
 
 ### Components of a Packer Configuration File
