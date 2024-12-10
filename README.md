@@ -27,8 +27,7 @@ aws ec2 describe-images --owners self --query 'Images[*].[ImageId,Name,State]' -
 ### Deregister the AMI
 aws ec2 deregister-image --image-id <ami-id>
 ```
-
-Step-by-Step Guide to Creating an Amazon Image Using Packer:
+###  Step-by-Step Guide to Creating an Amazon Image Using Packer:
 
 1.	Create a directory for your template.
 2.	Create a JSON configuration file.
