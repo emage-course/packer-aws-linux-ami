@@ -23,6 +23,9 @@ packer build amazon-linux-ami.json
 
 ### Display AMI
 aws ec2 describe-images --owners self --query 'Images[*].[ImageId,Name,State]' --output table
+
+### Deregister the AMI
+aws ec2 deregister-image --image-id <ami-id>
 ```
 
 Step-by-Step Guide to Creating an Amazon Image Using Packer:
