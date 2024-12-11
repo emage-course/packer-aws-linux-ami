@@ -9,9 +9,15 @@
     {
       "type": "amazon-ebs",
       "source_ami": "{{user `base_ami`}}",
-      "instance_type": "{{user `instance_type` }}",
+      "instance_type": "{{user `instance_type`}}",
       "ssh_username": "{{user `ssh_username`}}",
-      "ami_name": "packer-amazon-base2-{{timestamp}}"
+      "ami_name": "packer-amazon-base2-{{timestamp}}",
+      "tags": {
+        "Environment": "prod",
+        "Name": "packer-amazon-base2-{{timestamp}}",
+        "PackerBuilt": "true",
+        "App": "demo"
+      }
     }
   ],
 

@@ -18,6 +18,7 @@ The Packer configuration file consists of three main components:
 
 ```sh
 ### validate and build the image
+packer fmt amazon-linux-ami.json
 packer validate amazon-linux-ami.json
 packer build amazon-linux-ami.json
 
